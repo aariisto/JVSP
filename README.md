@@ -25,28 +25,35 @@ tb Interface: java.util // java.util
 
 =========================================================
 
-try{
-InputStream inSTream = new FileInputStream ("donnee.txt");
-InputStreamReader streamReader = new InputStreamReader(inSTream);
-BufferedReader reader = new BufferedReader(streamReader);
-String ligne = null;
-while ((ligne = reader.readLine()) != null) {
-System.out.println(ligne);
+Lecture d'un fichier texte en Java :
+
+```java
+try {
+    InputStream inStream = new FileInputStream("donnee.txt");
+    InputStreamReader streamReader = new InputStreamReader(inStream);
+    BufferedReader reader = new BufferedReader(streamReader);
+    String ligne;
+    while ((ligne = reader.readLine()) != null) {
+        System.out.println(ligne);
+    }
+    reader.close();
+} catch (Exception x) {
+    System.out.println("Erreur d'ouverture du fichier : " + x.getMessage());
 }
-reader.close();
-}catch( Exception x){
-System.out.println("Erreur d'ouverture du fichier : " + x.getMessage());
-}
+```
 
 =================================================
 
-        try{
-        OutputStream outStream = new FileOutputStream("donnee.txt", true);
-        OutputStreamWriter streamWriter = new OutputStreamWriter(outStream);
-        String donee = "Data , newdata\n";
-        streamWriter.write(donee);
-        streamWriter.close();
-        }catch(Exception x){
-            System.out.println("Erreur d'ouverture du fichier : " + x.getMessage());
-        }
-    }
+Ecriture dans un fichier texte en Java :
+
+```java
+try {
+    OutputStream outStream = new FileOutputStream("donnee.txt", true);
+    OutputStreamWriter streamWriter = new OutputStreamWriter(outStream);
+    String donnee = "Data , newdata\n";
+    streamWriter.write(donnee);
+    streamWriter.close();
+} catch (Exception x) {
+    System.out.println("Erreur d'ouverture du fichier : " + x.getMessage());
+}
+```
