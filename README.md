@@ -23,6 +23,8 @@ tb Interface: java.util // java.util
 - HashMap <String, String> liste = new HashMap<String, String>() // TreeMap
 - .put("a", "b") // .remove("a") // .get("a") // .containsKey("a") // .keySet()
 
+=========================================================
+
 try{
 InputStream inSTream = new FileInputStream ("donnee.txt");
 InputStreamReader streamReader = new InputStreamReader(inSTream);
