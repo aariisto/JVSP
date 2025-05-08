@@ -1,16 +1,17 @@
 String tab[] = s.split(" "); java.lang.String
 
-Tb classique : tb[]
-Tb partculiers : Liste ( Arraylist) // Vecteure
-Ensemble Interface : treeSet , HashSet
-Disctionnaire interface Map : HashMap , TreeMap
+- Tb classique : tb[]
+- Tb partculiers : Liste ( Arraylist) // Vecteure
+- Ensemble Interface : treeSet , HashSet
+- Disctionnaire interface Map : HashMap , TreeMap
 
 Tb classique :
 
 - int tab1[] // int [] tab2
 - tab1 = new int[4] // tab1 = new int[] {4, 2}; // int tab1[] = {5,5}
 
-tb particulier LIST : Vector, ArrayList // java.util.Vector, java.util.ArrayList
+tb particulier LIST : 
+- Vector, ArrayList // java.util.Vector, java.util.ArrayList
 
 - ArrayList <String> liste = new ArrayList<String>() // ArrayList liste = new ArrayList()
 - .remove(0) // .size() // .add(0, "a") // .get(0) // .set(0, "a") //
